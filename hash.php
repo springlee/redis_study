@@ -21,7 +21,7 @@ $redis->select(0);
 //    'age'=>18,
 //];
 //
-//var_dump($redis->hSet('user',$user));
+//var_dump($redis->hMset('user',$user));
 
 //设置值
 //$redis->hSet('user','height',180.5);
@@ -71,8 +71,17 @@ $redis->select(0);
 
 
 //获取所有的值 ,没有键
-var_dump($redis->hVals('user'));
+//var_dump($redis->hVals('user'));
 
+
+
+//删除 单个域 多个域
+//var_dump($redis->hDel('user','height1'));
+
+//删除整个key
+//var_dump($redis->del('user'));
+
+//var_dump($redis->hExists('user','name'));
 
 
 

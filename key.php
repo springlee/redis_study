@@ -18,7 +18,6 @@ $redis->select(0);
 //$redis->set('key','123');
 
 //删除
-//$redis->del('test');
 
 //序列化
 //$res= $redis->dump('test');
